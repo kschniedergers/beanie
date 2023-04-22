@@ -10,8 +10,8 @@ hooks:
     - mkdir -p docs/build/content
     - cp -r docs/assets docs/build/content
     - cp docs/CNAME docs/build/content
-    
-renderer:  
+
+renderer:
   type: mkdocs
   output_directory: docs/build
   mkdocs_config:
@@ -113,20 +113,42 @@ renderer:
         - title: Operators
           children:
             - title: Find
-              contents:
-                - beanie.odm.operators.find.*
+              children:
+                - title: Array
+                  contents:
+                    - beanie.odm.operators.find.array.*
+                - title: Bitwise
+                  contents:
+                    - beanie.odm.operators.find.bitwise.*
+                - title: Comparison
+                  contents:
+                    - beanie.odm.operators.find.comparison.*
+                - title: Element
+                  contents:
+                    - beanie.odm.operators.find.element.*
+                - title: Evaluation
+                  contents:
+                    - beanie.odm.operators.find.evaluation.*
+                - title: Logical
+                  contents:
+                    - beanie.odm.operators.find.logical.*
             - title: Update
-              contents:
-                - beanie.odm.operators.update.*
+              children:
+                - title: Array
+                  contents:
+                    - beanie.odm.operators.update.array.*
+                - title: Bitwise
+                  contents:
+                    - beanie.odm.operators.update.bitwise.*
+                - title: General
+                  contents:
+                    - beanie.odm.operators.update.general.*
         - title: Fields
           contents:
-            - beanie.odm.fields.*            
+            - beanie.odm.fields.*
     - title: Development
       source: docs/development.md
     - title: Code of conduct
       source: docs/code-of-conduct.md
     - title: Changelog
       source: docs/changelog.md
-      
-
-      
