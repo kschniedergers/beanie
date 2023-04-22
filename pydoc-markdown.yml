@@ -105,11 +105,54 @@ renderer:
           contents:
             - beanie.odm.documents.*
         - title: Query
-          contents:
-            - beanie.odm.queries.*
+          children:
+            - title: Aggregation
+              contents:
+                - beanie.odm.queries.aggregation.*
+            - title: Cursor
+              contents:
+                - beanie.odm.queries.cursor.*
+            - title: Delete
+              contents:
+                - beanie.odm.queries.delete.*
+            - title: Find
+              contents:
+                - beanie.odm.queries.find.*
+            - title: Update
+              contents:
+                - beanie.odm.queries.update.*
         - title: Interfaces
-          contents:
-            - beanie.odm.interfaces.*
+          children:
+            - title: Aggregate
+              contents:
+                - beanie.odm.interfaces.aggregate.*
+            - title: Aggregation Methods
+              contents:
+                - beanie.odm.interfaces.aggregation_methods.*
+            - title: Clone
+              contents:
+                - beanie.odm.interfaces.clone.*
+            - title: Detector
+              contents:
+                - beanie.odm.interfaces.detector.*
+            - title: Find
+              contents:
+                - beanie.odm.interfaces.find.*
+            - title: Getters
+              contents:
+                - beanie.odm.interfaces.getters.*
+            - title: Inheritance
+              contents:
+                - beanie.odm.interfaces.inheritance.*
+            - title: Session
+              contents:
+                - beanie.odm.interfaces.session.*
+            - title: Setters
+              contents:
+                - beanie.odm.interfaces.setters.*
+            - title: Update
+              contents:
+                - beanie.odm.interfaces.update.*
         - title: Operators
           children:
             - title: Find
