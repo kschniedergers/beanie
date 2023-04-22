@@ -7,6 +7,7 @@ from pymongo.client_session import ClientSession
 from beanie.odm.queries.aggregation import AggregationQuery
 from beanie.odm.queries.find import FindMany
 
+from beanie import 
 DocType = TypeVar("DocType", bound="AggregateInterface")
 DocumentProjectionType = TypeVar("DocumentProjectionType", bound=BaseModel)
 
